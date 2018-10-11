@@ -4,16 +4,15 @@ var gridX;
 var gridY;
 var r;
 var g;
-var b = 0;
-var color;
+
 function setup() {
 	createCanvas(600,600);
 	rectMode(CENTER);
-	color = true;
+
 }
 
 function draw() {
-	r = map(mouseX,0,600,255,150);
+	r = map(mouseX,0,600,255,150); //changing color of strokes and background
 	g = map(mouseY,0,600,255,150);
 
 	background(r,0,g);
@@ -22,7 +21,7 @@ function draw() {
 	stroke(r,g,0);
 	strokeWeight(5);
 
-	for(i=0;i<4;i++){
+	for(i=0;i<4;i++){ // replicating the flower/ 4 leaf pattern
 		gridY = map(i,0,3,75,525);
 		for(j=0;j<4;j++){
 			gridX = map(j,0,3,75,525);
@@ -32,7 +31,7 @@ function draw() {
 			pop();
 		}
 	}
-	push();
+	push(); // making columns and rows and leaves
 	translate(50,0);
 	manyhorizontalleaves();
 	pop();
@@ -40,28 +39,32 @@ function draw() {
 	translate(0, 50);
 	manyverticalleaves();
 	pop();
+
 }
 
-function grid() {
+function grid() { //flower/ 4 leaf pattern
 	rect(-37.5,-37.5,50,50,0,25,0,25);
 	rect( 37.5,-37.5,50,50,25,0,25,0);
 	rect(-37.5, 37.5,50,50,25,0,25,0);
 	rect( 37.5, 37.5,50,50,0,25,0,25);
 	rect(0,0,50,50);
 	rect(0,0,25,50);
-	rect(0,0,50,25);	
+	rect(0,0,50,25);
+
 }
 
-function leaf(x, y, w, h){
+function leaf(x, y, w, h){ //original single leaf
 	rect(x, y, w, h, 0, 25, 0, 25);
+
 }
 
-function leafhorizontal(){
+function leafhorizontal(){ //making leaf horizontal
 	rotate((PI*3)/4);
   	leaf(0,0,50,50);
+
 }
 
-function leaveshorizontal(){
+function leaveshorizontal(){ //leaf pattern for horizontal rows
 	push();
 	leafhorizontal();
 	pop();
@@ -69,9 +72,10 @@ function leaveshorizontal(){
 	translate(50,0);
 	leafhorizontal();
 	pop();
+
 }
 
-function horizontalleaves(){
+function horizontalleaves(){ //leaf pattern row
 	var xt = 0;
 	for (var i = 0; i < 6; i++){
 		push();
@@ -84,7 +88,7 @@ function horizontalleaves(){
 
 }
 
-function manyhorizontalleaves(){
+function manyhorizontalleaves(){ //duplicating leaf pattern rows
 	var yt = 0;
 	for (var j = 0; j < 6; j++){
 		push();
@@ -92,15 +96,17 @@ function manyhorizontalleaves(){
 		horizontalleaves();
 		pop();
 		yt += 150;
+
 	}
 }
 
-function leafvertical(){
+function leafvertical(){ //making leaf vertical
 	rotate(PI/4);
 	leaf(0,0,50,50);
+
 }
 
-function leavesvertical(){
+function leavesvertical(){ //leaf pattern for vertical columns
 	push();
 	leafvertical();
 	pop();
@@ -111,7 +117,7 @@ function leavesvertical(){
 
 }
 
-function verticalleaves(){
+function verticalleaves(){ //leaf pattern column
 	var yt = 0;
 	for (var k = 0; k < 6; k++){
 		push();
@@ -124,7 +130,7 @@ function verticalleaves(){
 
 }
 
-function manyverticalleaves(){
+function manyverticalleaves(){ //duplicating leaf pattern columns
 	var xt = 0;
 	for (var l = 0; l < 6; l++){
 		push();
@@ -132,5 +138,6 @@ function manyverticalleaves(){
 		verticalleaves();
 		pop();
 		xt += 150;
+		
 	}
 }
