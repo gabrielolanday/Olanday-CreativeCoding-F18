@@ -41,17 +41,7 @@ function dataReceived(data,city){
 		text("LONGTUDE: " + data.coord.lon,0,50)
 	pop()
 	
-	/*
-	for(var i=0;i<data.sys.length;i++){
-		console.log(data.sys[i])
-		text(data.sys[i],100,100*i)
-	}
-	*/
-	
 }
 
-function draw() {
-
-}
 
 
