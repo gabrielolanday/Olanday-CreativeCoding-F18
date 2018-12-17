@@ -1,0 +1,97 @@
+{
+	"Name": "KxngMars",
+	"Platform": {
+		"PC": {
+			"Playlist": {
+				"SOLO": {
+				  "Season": {
+				    "4": {
+				      "Matches": 425,
+				      "Wins": 13,
+				      "Kills": 785
+				    },
+				    "5": {
+				      "Matches": 419,
+				      "Wins": 23,
+				      "Kills": 999
+				    },
+				    "6": {
+				      "Matches": 306,
+				      "Wins": 25,
+				      "Kills": 830
+				    }
+				  }
+				},
+				"DUOS": {
+				  "Season": {
+				    "4": {
+				      "Matches": 330,
+				      "Wins": 34,
+				      "Kills": 674
+				    },
+				    "5": {
+				      "Matches": 644,
+				      "Wins": 91,
+				      "Kills": 1547
+				    },
+				    "6": {
+				      "Matches": 231,
+				      "Wins": 33,
+				      "Kills": 561
+				    }
+				  }
+				},
+				"SQUADS": {
+				  "Season": {
+				    "4": {
+				      "Matches": 221,
+				      "Wins": 28,
+				      "Kills": 421
+				    },
+				    "5": {
+				      "Matches": 331,
+				      "Wins": 63,
+				      "Kills": 736
+				    },
+				    "6": {
+				      "Matches": 196,
+				      "Wins": 35,
+				      "Kills": 504
+				    }
+				  }
+				}
+			}
+	},
+		"PS4": {
+			"Playlist": {
+				"SOLO": {
+				  "Season": {
+				    "4": {
+				      "Matches": 869,
+				      "Wins": 2,
+				      "Kills": 826
+				    }
+				  }
+				},
+				"DUOS": {
+				  "Season": {
+				    "4": {
+				      "Matches": 577,
+				      "Wins": 4,
+				      "Kills": 474
+				    }
+				  }
+				},
+				"SQUADS": {
+				  "Season": {
+				    "4": {
+				      "Matches": 608,
+				      "Wins": 12,
+				      "Kills": 475
+				    }
+				  }
+				}
+			}
+		}
+	}
+}
